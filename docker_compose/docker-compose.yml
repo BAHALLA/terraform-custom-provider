@@ -3,7 +3,7 @@ services:
   api:
     image: "hashicorpdemoapp/product-api:v4280cf7"
     ports:
-      - "19090:9090"
+      - "192.168.1.8:19090:9090"
     volumes:
       - ./conf.json:/config/config.json
     environment:
